@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'MuseoModerno', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  height: 100%;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  max-width: 450px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 5px #999;
+  background: #fff;
+}
+
+.header-wrapp {
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-family: 'MuseoModerno', cursive;
+  font-weight: bold;
+  font-size: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gap {
+  height: 10vh;
+}
+
+.main {
+  min-height: 80vh;
+  width: 100%;
+  background: #fafafa;
+}
+
+.main-wrapp {
+  height: 100%;
+}
+
+.footer {
+  height: 10vh;
+  background: #fff;
+  width: 100%;
+  display: flex;
+}
+
+.footer-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  max-width: 35px;
 }
