@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './Todo.css';
 
 import close from '../close.svg';
@@ -9,13 +9,25 @@ const Todo = ({ todo, toggleCompleted, deleteTodo }) => {
 
     function handleCheckbox () {
         toggleCompleted(todo.id);
-        if (checkboxIcon === checkbox) {
-            setCheckboxIcon(checkboxChecked);
+        if (todo.completed === true) {
+            setCheckboxIcon(checkbox);
         } else {
+            setCheckboxIcon(checkboxChecked);
+        }
+    }
+
+    useEffect(() => {
+        checkForIcon();
+    }, [])
+
+    function checkForIcon() {
+        if (todo.completed === true) {
+            setCheckboxIcon(checkboxChecked);
+        }   else {
             setCheckboxIcon(checkbox);
         }
     }
-    
+   
     function handleDelete () {
         deleteTodo(todo.id);
     }

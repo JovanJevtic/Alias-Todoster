@@ -78,7 +78,9 @@ function App() {
           </div>
 
           <div className="footer-block">
-            <img className="footer-icon" src={githubLogo} alt="github"></img>
+            <a href="https://github.com/JovanJevtic/Alias-Todoster">
+              <img className="footer-icon" src={githubLogo} alt="github"></img>
+            </a>
           </div>
 
           <div className="footer-block">
