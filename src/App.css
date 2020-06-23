@@ -19,7 +19,6 @@
 }
 
 header {
-  position: fixed;
   height: 10vh;
   width: 100%;
   border-bottom: 1px solid #ddd;
@@ -41,7 +40,7 @@ header {
 }
 
 .gap {
-  height: 10vh;
+  height: 0vh;
 }
 
 .main {
